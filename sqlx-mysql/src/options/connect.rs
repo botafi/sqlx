@@ -61,7 +61,7 @@ impl ConnectOptions for MySqlConnectOptions {
                 conn.stream.collation.as_str()
             ));
 
-            conn.execute(&*options).await?;
+            // conn.execute(&*options).await?;
 
             Ok(conn)
         })
